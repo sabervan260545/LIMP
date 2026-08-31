@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "implementation": "LIUP-AR",
+  "checkpoint": "output/liup_generator_v2/autoregressive/generator.pt",
+  "checkpoint_sha256": "c25b229bd85f321926d83c0976d4c13372bff6f23e5f645a6535a1f6074562d8",
+  "training_fasta": "output/liup_generator_v2/data/train.fasta",
+  "training_fasta_sha256": "29eaf3b94cb4d1c46c0735cc40d77b56216021e9299af1bcc755ef83cefca09e",
+  "checkpoint_metadata": {
+    "architecture": "liup_amp_autoregressive_transformer_v2",
+    "model_config": {
+      "max_tokens": 32,
+      "d_model": 128,
+      "num_layers": 3,
+      "num_heads": 4,
+      "feedforward_dim": 256,
+      "dropout": 0.15
+    },
+    "seed": 42,
+    "best_validation_nll": 2.24983952905211
+  },
+  "seeds": [
+    20260727,
+    20260728,
+    20260729
+  ],
+  "target_unique_per_seed": 10000,
+  "sampling": {
+    "temperature": 1.0,
+    "top_k": 10,
+    "top_p": 1.0,
+    "min_length": 12,
+    "max_length": 28
+  },
+  "device": "cuda"
+}

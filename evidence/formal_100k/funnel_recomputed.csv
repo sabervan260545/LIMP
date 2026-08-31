@@ -1,0 +1,8 @@
+stage,n,criterion
+LIUP-AR exact unique generation,100000,unique canonical sequences
+sequence prediction success,100000,all sequence predictors returned
+ESMFold/PDB success,100000,structure status success and PDB hash present
+PGAT-ABPp pass,98690,PGAT-ABPp >= 0.50
+structural qualification,98674,PGAT-ABPp >= 0.50 and mean pLDDT >= 45
+pre-Pareto QC pass,33180,all frozen feasibility gates
+formal HBSP ranked,33180,six-objective HBSP eligible

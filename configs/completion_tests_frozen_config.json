@@ -1,0 +1,33 @@
+{
+  "protocol_status": "prespecified_before_new_comparative_results",
+  "protocol_amendments": ["protocol_amendment_step_scale.json"],
+  "frozen_date": "2026-08-20",
+  "terminology": {"discriminative_inverse_design": "LIUP-DI", "production_autoregressive": "LIUP-AR"},
+  "liup_di": {
+    "validation_seeds": [20260820, 20260821, 20260822, 20260823, 20260824],
+    "cluster_identity_threshold": 0.8,
+    "model_selection_metric": "validation_balanced_accuracy",
+    "max_length": 30,
+    "matched_covariates": ["length", "net_charge_proxy", "mean_hydropathy"]
+  },
+  "liup_ar": {
+    "generation_seeds": [20260727, 20260728, 20260729],
+    "target_unique_per_seed": 10000,
+    "temperature": 1.0,
+    "top_k": 10,
+    "top_p": 1.0,
+    "min_length": 12,
+    "max_length": 28
+  },
+  "bridge": {
+    "liup_di_checkpoint_seed": 20260820,
+    "target_unique_per_seed": 10000,
+    "liup_di_corrected_iterations": 500,
+    "liup_di_corrected_learning_rate_amended": 0.006,
+    "liup_di_corrected_uncompensated_sensitivity_learning_rate": 0.0003,
+    "primary_amp_predictors": ["Macrel", "HydrAMP"],
+    "exclude_liup_di_self_score": true,
+    "run_hbsp": false
+  },
+  "formal_job_id": "ss_full_100k_liup_20260727"
+}

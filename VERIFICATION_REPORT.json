@@ -1,0 +1,31 @@
+{
+  "schema_version": "limp-public-release-verification-v1",
+  "manifest_files_verified": 81,
+  "split_rows_verified": 5652,
+  "checkpoint": {
+    "sha256": "c25b229bd85f321926d83c0976d4c13372bff6f23e5f645a6535a1f6074562d8",
+    "parameters": 407703,
+    "model_config": {
+      "max_tokens": 32,
+      "d_model": 128,
+      "num_layers": 3,
+      "num_heads": 4,
+      "feedforward_dim": 256,
+      "dropout": 0.15
+    },
+    "best_validation_nll": 2.24983952905211
+  },
+  "formal_generation": {
+    "requested_unique_sequences": 100000,
+    "seed": 20260727,
+    "temperature": 1.0,
+    "top_k": 10,
+    "top_p": 1.0,
+    "min_length": 12,
+    "max_length": 28
+  },
+  "raw_training_fasta_present": false,
+  "technical_release_ready": true,
+  "public_upload_ready": true,
+  "remaining_gate": "replace neutral author label with approved metadata when available"
+}

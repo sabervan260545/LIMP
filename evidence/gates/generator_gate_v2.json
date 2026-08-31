@@ -1,0 +1,53 @@
+{
+  "legacy": {
+    "generator": "legacy_classifier_guided",
+    "elapsed_seconds": 3.0884709898382425,
+    "metrics": {
+      "count": 256,
+      "validity_rate": 1.0,
+      "length_compliance_rate": 1.0,
+      "unique_rate": 1.0,
+      "exact_train_overlap_rate": 0.0,
+      "mean_max_train_identity": 0.22895289041463945,
+      "median_max_train_identity": 0.2222222222222222,
+      "amino_acid_l1_distance": 0.5251350672137409,
+      "homopolymer_run_ge4_rate": 0.0078125,
+      "max_homopolymer_run": 4,
+      "training_homopolymer_run_ge4_rate": 0.04756407296236435
+    }
+  },
+  "candidate": {
+    "generator": "liup_autoregressive_v2",
+    "elapsed_seconds": 0.4687834691721946,
+    "metrics": {
+      "count": 256,
+      "validity_rate": 1.0,
+      "length_compliance_rate": 1.0,
+      "unique_rate": 1.0,
+      "exact_train_overlap_rate": 0.0,
+      "mean_max_train_identity": 0.3396166324183266,
+      "median_max_train_identity": 0.32666666666666666,
+      "amino_acid_l1_distance": 0.10549636598624779,
+      "homopolymer_run_ge4_rate": 0.046875,
+      "max_homopolymer_run": 9,
+      "training_homopolymer_run_ge4_rate": 0.04756407296236435
+    }
+  },
+  "relative": {
+    "speedup": 6.588267703406961,
+    "composition_l1_reduction": 0.7991062250974975
+  },
+  "acceptance": {
+    "gates": {
+      "same_sample_count": true,
+      "all_tokens_are_valid": true,
+      "all_lengths_are_compliant": true,
+      "unique_rate": true,
+      "exact_train_overlap": true,
+      "composition_closer_than_legacy": true,
+      "faster_than_legacy": true,
+      "homopolymer_rate_matches_training_distribution": true
+    },
+    "passed": true
+  }
+}

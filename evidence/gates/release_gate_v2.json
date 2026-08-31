@@ -1,0 +1,57 @@
+{
+  "release": "LIUP AMP Generator v2",
+  "scope": "AMP sequence generation only; downstream predictors and Pareto ranking remain in the Harness.",
+  "parameters": {
+    "legacy_classifier_guided": 1393921,
+    "candidate_autoregressive": 407703,
+    "candidate_to_legacy_ratio": 0.2924864465059354
+  },
+  "candidate_training": {
+    "best_validation_nll": 2.24983952905211,
+    "test_nll": 2.1924770190338623,
+    "test_perplexity": 8.957373241853336
+  },
+  "generator_comparison": {
+    "speedup": 6.588267703406961,
+    "composition_l1_reduction": 0.7991062250974975
+  },
+  "sampling_stability": {
+    "minimum_unique_rate": 1.0,
+    "maximum_exact_train_overlap": 0.0,
+    "maximum_homopolymer_run_ge4_rate": 0.06640625,
+    "training_homopolymer_run_ge4_rate": 0.04756407296236435,
+    "passed": true
+  },
+  "service_health": {
+    "status": "ready",
+    "model": "LIUP AMP autoregressive v2",
+    "device": "cpu",
+    "sequence_only": true,
+    "metadata": {
+      "architecture": "liup_amp_autoregressive_transformer_v2",
+      "model_config": {
+        "max_tokens": 32,
+        "d_model": 128,
+        "num_layers": 3,
+        "num_heads": 4,
+        "feedforward_dim": 256,
+        "dropout": 0.15
+      },
+      "training_seed": 42,
+      "best_validation_nll": 2.24983952905211
+    }
+  },
+  "acceptance": {
+    "checks": {
+      "data_similarity_isolation": true,
+      "candidate_is_lightweight_at_most_500k_parameters": true,
+      "candidate_is_smaller_than_legacy": true,
+      "candidate_validation_nll_at_most_2_30": true,
+      "legacy_comparison_gate": true,
+      "three_seed_sampling_stability": true,
+      "service_is_ready": true,
+      "service_is_sequence_only": true
+    },
+    "passed": true
+  }
+}

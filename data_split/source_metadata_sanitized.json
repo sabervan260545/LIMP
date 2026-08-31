@@ -1,0 +1,27 @@
+{
+  "input_fasta": "<PROJECT_ROOT>/all_abp.fasta",
+  "input_sha256": "d71c83d930117b708e2dea6f7355de578a0a05a9de5e0660d9e9e1625985d684",
+  "identity_metric": "same_length_ungapped_identity",
+  "identity_threshold": 0.8,
+  "split_seed": 42,
+  "records": {
+    "count": 5652,
+    "unique_sequences": 5652,
+    "length": {
+      "min": 4,
+      "median": 17.0,
+      "max": 30,
+      "mean": 17.698513800424628
+    },
+    "sources": {
+      "independent": 4017,
+      "main": 1635
+    },
+    "clusters": 3087,
+    "splits": {
+      "test": 708,
+      "train": 4331,
+      "validation": 613
+    }
+  }
+}

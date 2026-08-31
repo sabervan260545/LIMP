@@ -1,0 +1,13 @@
+.git
+.env
+__pycache__/
+*.py[cod]
+*.log
+*.zip
+*.pt
+*.pth
+*.npy
+*.npz
+/data/
+/models/
+/outputs/

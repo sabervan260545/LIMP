@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "di_checkpoint": "benchmark_output/LIUP_COMPLETION_TESTS_20260820/01_liup_di_validation/checkpoints/LIUP-DI-corrected/seed_20260820/classifier.pt",
+  "di_checkpoint_sha256": "551b47f3cbd45efc871da9dcc265ca0e09b5d5c825f3e3d82c0278a7855c0a06",
+  "training_fasta": "output/liup_generator_v2/data/train.fasta",
+  "training_fasta_sha256": "29eaf3b94cb4d1c46c0735cc40d77b56216021e9299af1bcc755ef83cefca09e",
+  "ar_multiseed_dir": "benchmark_output/LIUP_COMPLETION_TESTS_20260820/02_liup_ar_multiseed",
+  "seeds": [
+    20260727,
+    20260728,
+    20260729
+  ],
+  "target_unique_per_seed": 10000,
+  "output_contract": {
+    "min_length": 12,
+    "max_length": 28,
+    "canonical_only": true,
+    "exact_unique": true
+  },
+  "di_native_optimization": {
+    "iterations": 500,
+    "temperature": 0.3,
+    "learning_rate": 0.006
+  },
+  "self_score_is_diagnostic_only": true,
+  "device": "cuda",
+  "predictor_panel": {
+    "status": "complete",
+    "directory": "predictors",
+    "primary_predictors": ["Macrel 1.6.0", "HydrAMP frozen AMP classifier"],
+    "boundary": "computational AMP-like proposal assessment, not biological validation"
+  }
+}

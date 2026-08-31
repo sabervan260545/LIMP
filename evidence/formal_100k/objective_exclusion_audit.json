@@ -1,0 +1,20 @@
+{
+  "required_six_objectives": [
+    "normalized_logMIC_risk",
+    "hemolysis_risk",
+    "cpp_risk",
+    "functional_surface_organization_risk",
+    "proteolytic_accessibility_risk",
+    "reference_geometry_outlier_risk"
+  ],
+  "all_required_objectives_present_in_ranker_sources": true,
+  "liup_di_score_field": "legacy_amp_probability",
+  "liup_di_score_present_in_ranker_sources": false,
+  "amp_score_is_output_metadata_not_declared_objective": false,
+  "source_files": {
+    "scripts/benchmark/benchmark_structure_generators_v2.py": "1c5d7e172484af97c5f7826351616ff94215a31100b28d0a192016d2549de316",
+    "scripts/benchmark/benchmark_structure_generators_v2_qc.py": "67caa53d91c8bf8e8706f5c1ddd7dbb45960451bb15d930591b0ab1ee7cc2767",
+    "scripts/benchmark/export_v2_4_qc_ranked_tables.py": "5545befb63cf1e2b9d9309c8f66a94a39c8049e5fea69b43dc2775894b3ee2fb"
+  },
+  "confirmed_liup_di_score_excluded": true
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "limp-public-release-manifest-v1",
+  "release": "LIMP 1.0.0-rc1",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 LIMP contributors",
+  "created_at": "2026-08-31",
+  "paper_facing_family": "LIMP",
+  "historical_family": "LIUP",
+  "source_project_revision": "fde2b383646ce3f3f030bc9dbb81edcc2d22804d",
+  "models": {
+    "LIMP-DI": {
+      "role": "discriminative inverse-design method validation",
+      "formal_100k_source": false,
+      "checkpoint_bundled": false
+    },
+    "LIMP-AR": {
+      "role": "production-oriented autoregressive candidate generation",
+      "formal_100k_source": true,
+      "checkpoint_bundled": true,
+      "checkpoint_path": "checkpoint/LIMP-AR_generator.pt",
+      "checkpoint_sha256": "c25b229bd85f321926d83c0976d4c13372bff6f23e5f645a6535a1f6074562d8",
+      "parameters": 407703,
+      "architecture": "liup_amp_autoregressive_transformer_v2"
+    }
+  },
+  "training_data": {
+    "raw_fasta_bundled": false,
+    "input_fasta_sha256": "d71c83d930117b708e2dea6f7355de578a0a05a9de5e0660d9e9e1625985d684",
+    "hash_only_split_path": "data_split/split_manifest_hash_only.csv",
+    "hash_only_split_sha256": "623224763f9a8c3cd55381b81f05be3b3b082a14b5c8f86dfa42a8b3348f729c",
+    "records": 5652,
+    "train": 4331,
+    "validation": 613,
+    "test": 708
+  },
+  "formal_generation": {
+    "requested_unique": 100000,
+    "accepted_unique": 100000,
+    "seed": 20260727,
+    "original_generation_config_sha256": "86f49b84eddf74bb89ed41b98c51a4ea9a8c5029dee09a4d864e474c261a079c",
+    "generated_csv_sha256": "b927c6321b7cfcac9bce9bc73c1905a2585155667edd2ecbab30d0399787e2f2",
+    "candidate_pool_location": "separate Zenodo-oriented AMP-Agent data package"
+  },
+  "release_boundaries": {
+    "raw_training_sequences": "withheld pending source-level redistribution review",
+    "candidate_level_large_tables": "separate data archive",
+    "downstream_predictors": "not part of LIMP",
+    "hbsp_ranking": "not part of LIMP"
+  },
+  "status": {
+    "technical_release_ready": true,
+    "public_upload_ready": true,
+    "remaining_gates": [
+      "replace neutral author label with approved author metadata when available",
+      "add public repository URL when available",
+      "final supplementary information remains a separate AMP-Agent submission asset"
+    ]
+  }
+}

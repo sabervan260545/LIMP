@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "formal_model_attribution": "LIUP-AR",
+  "formal_model_attribution_basis": {
+    "generation_config_generator": "liup",
+    "preflight_model": "LIUP AMP autoregressive v2",
+    "preflight_architecture": "liup_amp_autoregressive_transformer_v2",
+    "preflight_training_seed": 42,
+    "checkpoint_architecture": "liup_amp_autoregressive_transformer_v2"
+  },
+  "provenance_limitation": "The historical preflight archived architecture and training seed but not the checkpoint SHA256. The current checkpoint hash is therefore a strongly linked, not contemporaneously archived, checkpoint identifier.",
+  "hashes": {
+    "liup_ar_checkpoint_current": "c25b229bd85f321926d83c0976d4c13372bff6f23e5f645a6535a1f6074562d8",
+    "training_manifest": "1abe3bbf89a95d74e23eab739ef4d00dbf062fd89f7f2ca95d62b5fbbedbe62e",
+    "training_metadata": "ed5d35c6bbea3910e2849d02287e538ee9a96153ed655574bc15bb24e9422b0c",
+    "generation_config": "ed98544781c499427ceb4b02772c2cd9c713a12f3c2eb7251cb0d7813b43fab6",
+    "generated_csv": "b927c6321b7cfcac9bce9bc73c1905a2585155667edd2ecbab30d0399787e2f2",
+    "generated_sequence_content": "f09bd0340c4ce8f1a16154568c81c8b1dda17faec9a0c2435a48dea00ded2149",
+    "cleaned_csv": "f521286d20c7afeb0a6fe771744dba5cefb51e90a4c1181100acc69fb2c7a77a",
+    "sequence_predictions_csv": "7bb0d7220d9fb1e3e8982294da93aeeb54444e51e06cb01791b5b7810519ee45",
+    "structure_results_csv": "831d71ec31e3d2331bd39f28587107b738c21f7f912fade238025de1e0a35f17",
+    "formal_qc_csv": "ae0a3d5145e25a5e70ac6dcb97422e3e957667c5213c4ed0767dba2f716902ac",
+    "formal_trace_csv": "433b93ca20681848bc3f179210bd472a297370c8431ef90c741a75d5cc6647ae"
+  },
+  "archived_generation_summary": {
+    "accepted_unique": 100000,
+    "batches_completed": 50,
+    "completed_at": "2026-07-27T03:42:49+00:00",
+    "duplicate_returned": 452,
+    "elapsed_seconds_this_invocation": 277.56,
+    "exact_n_satisfied": true,
+    "generation_config_sha256": "86f49b84eddf74bb89ed41b98c51a4ea9a8c5029dee09a4d864e474c261a079c",
+    "invalid_returned": 0,
+    "max_length": 28,
+    "mean_length": 18.271,
+    "min_length": 12,
+    "model": "LIUP AMP Generator",
+    "output_file": "<AMP_AGENT_RUNTIME>/structure_screening/jobs/ss_full_100k_liup_20260727/stage_00_generation/generated_unique_sequences.csv",
+    "output_sha256": "b927c6321b7cfcac9bce9bc73c1905a2585155667edd2ecbab30d0399787e2f2",
+    "raw_requested": 100452,
+    "requested_unique": 100000,
+    "schema_version": "exact-amp-generation-v2",
+    "service_filtered_or_missing": 0,
+    "service_returned": 100452
+  },
+  "recomputed_funnel": [
+    {
+      "stage": "LIUP-AR exact unique generation",
+      "n": 100000,
+      "criterion": "unique canonical sequences"
+    },
+    {
+      "stage": "sequence prediction success",
+      "n": 100000,
+      "criterion": "all sequence predictors returned"
+    },
+    {
+      "stage": "ESMFold/PDB success",
+      "n": 100000,
+      "criterion": "structure status success and PDB hash present"
+    },
+    {
+      "stage": "PGAT-ABPp pass",
+      "n": 98690,
+      "criterion": "PGAT-ABPp >= 0.50"
+    },
+    {
+      "stage": "structural qualification",
+      "n": 98674,
+      "criterion": "PGAT-ABPp >= 0.50 and mean pLDDT >= 45"
+    },
+    {
+      "stage": "pre-Pareto QC pass",
+      "n": 33180,
+      "criterion": "all frozen feasibility gates"
+    },
+    {
+      "stage": "formal HBSP ranked",
+      "n": 33180,
+      "criterion": "six-objective HBSP eligible"
+    }
+  ],
+  "terminal_status_sum": 100000,
+  "input_count": 100000,
+  "sequence_id_unique": true,
+  "objective_exclusion_confirmed": true,
+  "analysis_git_commit": "56882f7a69039e0fe706cc9dfb7ae317eb214d77"
+}

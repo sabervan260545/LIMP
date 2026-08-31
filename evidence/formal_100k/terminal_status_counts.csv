@@ -1,0 +1,5 @@
+terminal_status,n,fraction
+pre_pareto_qc_excluded,65494,0.65494
+formal_hbsp_ranked,33180,0.3318
+pgat_below_0_50_or_invalid,1310,0.0131
+mean_plddt_below_45,16,0.00016

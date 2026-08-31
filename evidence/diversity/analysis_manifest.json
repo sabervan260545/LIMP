@@ -1,0 +1,68 @@
+{
+  "analysis": "full-pool and Macrel-predicted-AMP sequence diversity, cross-generator similarity and known-AMP reference proximity",
+  "analysis_dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "rapidfuzz": "3.14.1"
+  },
+  "bootstrap_replicates": 2000,
+  "cluster_sample_per_generator_cohort": 10000,
+  "created_at": "2026-08-23T04:31:45.524498+00:00",
+  "cross_generator_exact_overlap": 0,
+  "elapsed_seconds": 75.04970434866846,
+  "length_matching": "nearest-neighbour query samples, reference contrasts and cluster samples use identical per-length counts across generators",
+  "macrel_predicted_amp_counts": {
+    "AMP-Designer": 90348,
+    "LIUP-AR": 83179
+  },
+  "manifest_sha256": "18e86ffd26edd248d2e1d0f3d289d7d228cce4bc95f1c7d3d0bd09039d4aed3d",
+  "metrics": {
+    "identity_clusters": "connected components under same-length ungapped identity threshold",
+    "length_matched_random_pair": "same-length ungapped identity using a common three-group length distribution",
+    "low_complexity": "maximum single-residue fraction >= 0.5",
+    "natural_random_pair": "1 - Levenshtein distance / max sequence length",
+    "nearest_neighbor": "exhaustive same-length ungapped identity"
+  },
+  "nearest_queries_per_generator": 3000,
+  "pair_samples_per_comparison": 50000,
+  "pool_counts": {
+    "AMP-Designer": 100000,
+    "LIUP-AR": 100000
+  },
+  "reference_boundary": "training/reference collections; not independent external biological validation",
+  "reference_counts": {
+    "amp_database_union": 14373,
+    "amp_designer_corpus": 9896,
+    "known_amp_union": 14668,
+    "liup_train": 4331,
+    "liup_validation_test": 1321
+  },
+  "schema_version": "amp-generator-sequence-diversity-reference-v1",
+  "seed": 20260823,
+  "source_files": {
+    "amp_database_apd3": "<AMP_DESIGNER_REPO>/data/APD3/APD_active_seq.csv",
+    "amp_database_camp": "<AMP_DESIGNER_REPO>/data/CAMP/camp_active_sequence.csv",
+    "amp_database_dbaasp": "<AMP_DESIGNER_REPO>/data/DBAASP/dbaasp_active_sequence.csv",
+    "amp_database_dbamp": "<AMP_DESIGNER_REPO>/data/DBAMP/dbAMP_active_sequence.csv",
+    "amp_database_dramp": "<AMP_DESIGNER_REPO>/data/DRAMP/DRAMP_active_sequence.csv",
+    "amp_designer_input": "<SCIENTIFIC_ARTIFACT_ROOT>/formal_runs/ss_full_100k_20260723/stage_00_input/cleaned_unique_sequences.csv",
+    "amp_designer_predictions": "<SCIENTIFIC_ARTIFACT_ROOT>/formal_runs/ss_full_100k_20260723/stage_01_sequence/all_sequence_predictions.csv",
+    "amp_designer_reference": "<AMP_DESIGNER_REPO>/data/prompt_data/amp_data.csv",
+    "liup_input": "<SCIENTIFIC_ARTIFACT_ROOT>/formal_runs/ss_full_100k_liup_20260727/stage_00_input/cleaned_unique_sequences.csv",
+    "liup_predictions": "<SCIENTIFIC_ARTIFACT_ROOT>/formal_runs/ss_full_100k_liup_20260727/stage_01_sequence/all_sequence_predictions.csv",
+    "liup_reference_manifest": "<PROJECT_ROOT>/output/liup_generator_v2/data/manifest.csv"
+  },
+  "source_sha256": {
+    "amp_database_apd3": "674e39853eaf05fcfb75b41e16ba70000e024bcc86c02fb0b517b8a009d4c6b8",
+    "amp_database_camp": "0a52fb585b2566756bf00238c972ae8bfbf6230219df5673df26e34051dd7367",
+    "amp_database_dbaasp": "36c70fbbd45d0df10cb375e55621bbb6c6bec7683ef37afc94cf941066f7aee8",
+    "amp_database_dbamp": "2d560120269ec4ae064b17d9d1d32018c363b258e3126896c12a12efdf38c833",
+    "amp_database_dramp": "5acc3bde31f34245483cf1791d322e36cd70cd138e7f94d854f3dd7eb5a4a0c4",
+    "amp_designer_input": "c23a36dab5f95f5ae8559402ecccf95853240c788e57fc02aa5d3cac9f5e2c18",
+    "amp_designer_predictions": "bcc81ba8a5a395fd8778a2c79e35de0a329c4a01442c66b81a372bfee380a4af",
+    "amp_designer_reference": "45e1cbb4da416ab1cf10ba084297a9ec57537938b03ac47b2e5f3257a0028214",
+    "liup_input": "f521286d20c7afeb0a6fe771744dba5cefb51e90a4c1181100acc69fb2c7a77a",
+    "liup_predictions": "7bb0d7220d9fb1e3e8982294da93aeeb54444e51e06cb01791b5b7810519ee45",
+    "liup_reference_manifest": "1abe3bbf89a95d74e23eab739ef4d00dbf062fd89f7f2ca95d62b5fbbedbe62e"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "identity_metric": "same_length_ungapped_identity",
+  "identity_threshold": 0.8,
+  "acceptance": {
+    "similarity_aware_near_neighbor_rate_must_equal": 0.0,
+    "similarity_aware_near_neighbor_rate": 0.0,
+    "passed": true
+  },
+  "legacy_random": {
+    "name": "legacy_random",
+    "train_count": 10995,
+    "test_count": 1941,
+    "accuracy": 0.9108706852138073,
+    "balanced_accuracy": 0.9096258998083862,
+    "auroc": 0.9710227174644825,
+    "auprc": 0.9652809225352023,
+    "mcc": 0.8189311335730025,
+    "near_neighbor_rate": 0.39361154044307056
+  },
+  "similarity_aware": {
+    "name": "similarity_aware",
+    "train_count": 11105,
+    "test_count": 1831,
+    "accuracy": 0.8962315674494812,
+    "balanced_accuracy": 0.8934647518035166,
+    "auroc": 0.9617274257978184,
+    "auprc": 0.9477090865403062,
+    "mcc": 0.7856619590850604,
+    "near_neighbor_rate": 0.0
+  }
+}

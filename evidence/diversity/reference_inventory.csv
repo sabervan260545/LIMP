@@ -1,0 +1,13 @@
+reference,n_unique,length_min,length_median,length_max,within_generation_length_n
+known_amp_union,14668,1.0,18.0,255.0,8888.0
+amp_database_union,14373,1.0,18.0,255.0,8658.0
+liup_train,4331,4.0,17.0,30.0,3336.0
+liup_validation_test,1321,4.0,18.0,30.0,1074.0
+amp_designer_corpus,9896,1.0,16.0,32.0,7402.0
+liup_all_vs_amp_database_union_exact_overlap,5357,,,,
+liup_all_vs_amp_designer_corpus_exact_overlap,4790,,,,
+database_source_apd3,3004,2.0,27.0,183.0,1462.0
+database_source_camp,2064,5.0,28.0,255.0,988.0
+database_source_dbaasp,9730,2.0,16.0,32.0,7245.0
+database_source_dbamp,11641,1.0,18.0,255.0,7123.0
+database_source_dramp,3924,2.0,23.0,101.0,2200.0

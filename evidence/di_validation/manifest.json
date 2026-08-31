@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "terminology": [
+    "LIUP-DI-legacy",
+    "LIUP-DI-corrected"
+  ],
+  "inputs": {
+    "all_abp.fasta": "d71c83d930117b708e2dea6f7355de578a0a05a9de5e0660d9e9e1625985d684",
+    "all_nonabp.fasta": "0e1869123c30f34a1ffb011ab156473c3daa68c939584acd87b68c73591f9144"
+  },
+  "seeds": [
+    20260820,
+    20260821,
+    20260822,
+    20260823,
+    20260824
+  ],
+  "identity_threshold": 0.8,
+  "records_after_dedup_and_conflict_quarantine": 12936,
+  "conflicting_sequences": 0,
+  "clusters": 8744,
+  "device": "cuda"
+}

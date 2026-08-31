@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use LIMP, please cite the associated AMP-Agent manuscript and this software record."
+title: "LIMP: discriminative inverse design and scalable autoregressive antimicrobial-peptide generation"
+type: software
+license: MIT
+version: 1.0.0-rc1
+date-released: 2026-08-30
+authors:
+  - name: "LIMP contributors"
+abstract: >-
+  LIMP is a laboratory antimicrobial-peptide design method family comprising
+  a discriminative inverse-design implementation (LIMP-DI) and a scalable
+  autoregressive generator (LIMP-AR).
+keywords:
+  - antimicrobial peptide
+  - causal Transformer
+  - peptide generation
+  - inverse design

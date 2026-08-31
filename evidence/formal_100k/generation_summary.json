@@ -1,0 +1,21 @@
+{
+  "accepted_unique": 100000,
+  "batches_completed": 50,
+  "completed_at": "2026-07-27T03:42:49+00:00",
+  "duplicate_returned": 452,
+  "elapsed_seconds_this_invocation": 277.56,
+  "exact_n_satisfied": true,
+  "generation_config_sha256": "86f49b84eddf74bb89ed41b98c51a4ea9a8c5029dee09a4d864e474c261a079c",
+  "invalid_returned": 0,
+  "max_length": 28,
+  "mean_length": 18.271,
+  "min_length": 12,
+  "model": "LIUP AMP Generator",
+  "output_file": "<AMP_AGENT_RUNTIME>/structure_screening/jobs/ss_full_100k_liup_20260727/stage_00_generation/generated_unique_sequences.csv",
+  "output_sha256": "b927c6321b7cfcac9bce9bc73c1905a2585155667edd2ecbab30d0399787e2f2",
+  "raw_requested": 100452,
+  "requested_unique": 100000,
+  "schema_version": "exact-amp-generation-v2",
+  "service_filtered_or_missing": 0,
+  "service_returned": 100452
+}
